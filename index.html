@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assortment UI</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+<body>
+   <div class="container">
+      <div class="header">
+         <h1>Assortment UI</h1>
+      </div>
+      <div class="nav">
+         <div class="nav__heading">Components</div>
+         <ul class="nav__list">
+            <li><a href="#avatar">Avatar</a></li>
+            <li><a href="#alert">Alert</a></li>
+            <li><a href="#badge">Badge</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#card">Card</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#input">Input</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#modal">Modal</a></li>
+            <li><a href="#simplified-grid">Simplified Grid</a></li>
+            <li><a href="#text-utility">Text Utilities</a></li>
+            <li><a href="#toast">Toast</a></li>
+         </ul>
+      </div>
+      <div class="cont">
+         <h1 id="avatar">Avatar</h1>
+         <div class="container-avatar">
+            <img class="avatar" src="images/Avatar.jpg">
+         </div>
+         <hr>
+
+         <h1 id="alert">Alert</h1>
+         <div class="container-alert">
+            <h2>Normal alert</h2>
+            <div class="alert">This is a normal alert.</div>
+         </div>
+
+         <div class="container-alert">
+            <h2>Alert with close button</h2>
+            <div class="alert">This is an alert with close button.<button class="alert__button">x</button></div>
+         </div>
+         <hr>
+
+         <h1 id="badge">Badge</h1>
+         <div class="container-badge">
+            <div class="container-badge__icon">
+               <h2>Badge on icon</h2>
+               <div class="icon-badge">
+                  <div class="icon-badge__badge icon-badge__badge--primary">9</div>
+                  <img class="icon-badge__img" src="images/thumbsup.svg">
+               </div>
+            </div>
+            <div class="container-badge__avatar">
+               <h2>Badge on avatar</h2>
+               <div class="avatar-badge">
+                  <div class="avatar-badge__badge avatar-badge__badge--primary">13</div>
+                  <img class="avatar-badge__img" src="images/Avatar.jpg">
+               </div>
+            </div>
+         </div>
+         <hr>
+
+         <h1 id="button">Button</h1>
+         <div class="container-primary-button">
+            <div class="container-primary-button__one">
+               <h2>Primary button(Type-I)</h2>
+               <button class="button button--primary">Primary</button>
+            </div>
+
+            <div class="container-primary-button__two">
+               <h2>Primary button(Type-II)</h2>
+               <button class="button button--primary--bg">Primary</button>
+            </div>
+         </div>
+
+
+         <h2>Link button</h2>
+         <div class="container-link-button">
+            <a class=" link-button link-button--primary" href="./">Link button</a>
+         </div>
+
+         <h2>Icon button</h2>
+         <div class="container-icon-button">
+            <div class="container-icon-button__menu">
+               <h3>Menu button</h2>
+                  <button class="button-icon button-icon--primary"><i class="fas fa-bars"></i> Menu</button>
+            </div>
+            <div class="container-icon-button__home">
+               <h3>Home button</h2>
+                  <button class="button-icon button-icon--primary"><i class="fas fa-home"></i> Home</button>
+            </div>
+         </div>
+
+
+         <h2>Floating action button</h2>
+         <div class="container-fab">
+            <div class="fab fab--primary">+</div>
+         </div>
+         <hr>
+
+         <h1 id="card">Card</h1>
+         <div class="container-card">
+            <div class="container-card__badge">
+               <h2>Card with a badge</h2>
+               <div class="card-badge">
+                  <img class="card-badge__img" src="https://via.placeholder.com/150">
+                  <div><span class="card-badge__badge card-badge__badge--primary">NEW</span><span>SOME TEXT</span></div>
+                  <div class="card-badge__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                     cupiditate.
+                     Nam
+                     porro quas ipsa. Ea
+                     obcaecati repellat illo doloremque atque sapiente, vel, enim in dignissimos mollitia ab, quaerat
+                     rerum cum!
+                  </div>
+               </div>
+            </div>
+
+            <div class="container-card__dismiss">
+               <h2>Card with dismiss</h2>
+               <div class="card-dismiss">
+                  <button class="card-dismiss__dismiss">X</button>
+                  <img class="card-dismiss__img" src="https://via.placeholder.com/150">
+                  <div class="card-dismiss__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                     cupiditate.
+                     Nam
+                     porro quas ipsa. Eao bcaecati repellat illo doloremque atque sapiente, vel, enim in dignissimos
+                     mollitia
+                     ab, quaerat
+                     rerum cum!
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-card">
+            <div class="container-card__overlay">
+               <h2>Card with Overlay text</h2>
+               <div class="card-overlay">
+                  <div class="card-overlay__overlay">This is overlay text that appears on the image.</div>
+                  <img src="https://via.placeholder.com/150">
+               </div>
+            </div>
+
+            <div class="container-card__text">
+               <h2>Text only cards</h2>
+               <div class="card-text">
+                  <h1>This is heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cupiditate. Nam
+                     porro quas ipsa. Eao bcaecati repellat illo doloremque atque sapiente, vel, enim in dignissimos
+                     mollitia
+                     ab, quaerat
+                     rerum cum!
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div>
+            <div class="container-card__horizontal">
+               <h2>Horizontal card</h2>
+               <div class="card-horizontal">
+                  <h1>This is heading.</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cupiditate. Nam
+                     porro quas ipsa. Eao bcaecati repellat illo doloremque atque sapiente, vel, enim in dignissimos
+                     mollitia
+                     ab, quaerat
+                     rerum cum!
+                  </p>
+               </div>
+            </div>
+
+            <div class="container-card__shadow">
+               <h2>Card with shadow</h2>
+               <div class="card-text card-text--shadow">
+                  <h1>This is heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cupiditate. Nam
+                     porro quas ipsa. Eao bcaecati repellat illo doloremque atque sapiente, vel, enim in dignissimos
+                     mollitia
+                     ab, quaerat
+                     rerum cum!
+                  </p>
+               </div>
+            </div>
+         </div>
+         <hr>
+
+         <h1 id="image">Image</h1>
+
+         <div class="container-img">
+            <div class="container-img__responsive">
+               <h2>responsive image</h2>
+               <div>
+                  <img class="img-responsive" src="https://via.placeholder.com/150">
+               </div>
+            </div>
+
+            <div class="container-img__round">
+               <h2>Round image</h2>
+               <div>
+                  <img src="https://via.placeholder.com/150" class="img-round">
+               </div>
+
+            </div>
+         </div>
+         <hr>
+
+
+         <h1 id="input">Input</h1>
+         <h2>Text Box</h2>
+         <div class="input">
+            <div class="input__container">
+               <h2>Standard</h2>
+               <input class="input__standard">
+            </div>
+            <div class="input__container">
+               <h2>Filled</h2>
+               <input class="input__filled">
+            </div>
+            <div class="input__container">
+               <h2>Outlined</h2>
+               <input class="input__outlined">
+            </div>
+         </div>
+
+
+         <h2>Validation and errors styled</h2>
+         <div class="error-input">
+            <div class="error-input__container">
+               <h2>Standard</h2>
+               <input class="error-input__standard">
+               <div class="error-text">Error text</div>
+            </div>
+            <div class="error-input__container">
+               <h2>Filled</h2>
+               <input class="error-input__filled">
+               <div class="error-text">Error text</div>
+            </div>
+            <div class="error-input__container">
+               <h2>Outlined</h2>
+               <input class="error-input__outlined">
+               <div class="error-text">Error text</div>
+            </div>
+         </div>
+         <hr>
+
+
+
+         <h1 id="list">List</h1>
+
+
+         <div class="container-list">
+
+            <h2>Normal list</h2>
+            <ul class="list-spaced">
+               <li class="list-spaced__item">Pen</li>
+               <li class="list-spaced__item">Pencil</li>
+               <li class="list-spaced__item">Ruler</li>
+               <li class="list-spaced__item">Eraser</li>
+               <li class="list-spaced__item">Sharpener</li>
+            </ul>
+
+
+
+            <h2>Notification list</h2>
+            <ul class="list-stacked">
+               <li class="list-stacked__item">
+                  <img src="images/Avatar.jpg">
+                  <div>Hello, How are you?</div>
+               </li>
+               <li class="list-stacked__item">
+                  <img src="images/Avatar.jpg">
+                  <div>That's great.</div>
+               </li>
+               <li class="list-stacked__item">
+                  <img src="images/Avatar.jpg">
+                  <div>Good noon...</div>
+               </li>
+               <li class="list-stacked__item">
+                  <img src="images/Avatar.jpg">
+                  <div>Wanna come for a walk?</div>
+               </li>
+            </ul>
+         </div>
+
+         <hr>
+
+
+
+         <div class="container-nav">
+            <h1 id="navigation">Navigation</h1>
+            <div class="nav-bar nav-bar--primary">
+               <div class="nav-bar__text">
+                  Nav Bar
+               </div>
+               <ul class="nav-bar__list">
+                  <li class="nav-bar__list__item"><a class="link--active" href="/">Home</a></li>
+                  <li class="nav-bar__list__item"><a href="/">About</a></li>
+                  <li class="nav-bar__list__item"><a href="/">Projects</a></li>
+               </ul>
+            </div>
+         </div>
+         <hr>
+
+
+         <div class="container-model">
+            <h1 id="modal">Modal</h1>
+            <div class="modal">
+               <button class="modal__close">x</button>
+               <div class="modal__title">Title</div>
+               <div class="modal__text">Text will be coming here.</div>
+               <div class="modal__buttons">
+                  <button class="modal__buttons__button modal__buttons__button--primary">Close</button>
+                  <button class="modal__buttons__button modal__buttons__button--primary">Save</button>
+               </div>
+            </div>
+         </div>
+         <hr>
+
+         <div class="container-grid">
+            <h1 id="simplified-grid">Simplified Grid</h1>
+            <h2>Grid-2</h2>
+            <div class="grid-two">
+               <div class="grid-two__item grid-two__item--primary">Item-1</div>
+               <div class="grid-two__item grid-two__item--secondary">Item-2</div>
+            </div>
+
+
+            <h2>Grid-3</h2>
+            <div class="grid-three">
+               <div class="grid-three__item-1 grid-three__item-1--primary">Item-1</div>
+               <div class="grid-three__item-2 grid-three__item-2--primary">Item-2</div>
+               <div class="grid-three__item-3 grid-three__item-3--secondary">Item-3</div>
+            </div>
+         </div>
+         <hr>
+
+
+
+         <div class="container-text-utilities">
+            <h1 id="text-utility">Text utilities</h1>
+
+            <h2>Display headings</h2>
+            <div class="display-one">Display heading I</div>
+            <div class="display-two">Display heading II</div>
+            <div class="display-three">Display heading III</div>
+            <div class="display-four">Display heading IV</div>
+
+
+            <h2>Small text</h2>
+            <div>This is <span class="small-text">small text.</span></div>
+
+            <h2>Gray text.</h2>
+            <div class="gray-text">This is gray text.</div>
+
+            <h2>Center text</h2>
+            <div class="container-center-text">
+               <div class="center-text">This is centered text</div>
+            </div>
+         </div>
+         <hr>
+
+         <h1 id="toast">Toast</h1>
+         <div class="toast">
+
+            <div class="toast__header">
+               <div>Toast</div>
+               <div>
+                  <small>1 min ago</small>
+                  <button class="toast__dismiss">X</button>
+               </div>
+            </div>
+            <div class="toast__body">
+               This is a toast message.
+            </div>
+         </div>
+
+
+
+      </div>
+   </div>
+</body>
+
+</html>
