@@ -192,25 +192,28 @@ body {
 }
 
 .button {
-    border: 2px var(--primary-color) solid;
+    border-width: 0.125rem;
+    border-style:solid;
     border-radius: 0.25rem;
-    padding: 0.375rem 0.75rem;
+    padding: 0.6rem 0.9rem;
     color: black;
     cursor: pointer;
 }
 
 .button--primary {
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-.button-primary--bg {
-    background-color: white;
+.button--primary-bg {
+    
     color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-.button--primary--bg:hover {
+.button--primary-bg:hover {
 
-    color: white;
+    color: black;
     cursor: pointer;
     background-color: var(--primary-color);
 }
