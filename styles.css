@@ -549,9 +549,9 @@ body {
     margin-right: 0.5rem;
 }
 
-.nav-bar__list__item>a {
+.nav-bar__list__link{
     text-decoration: none;
-    color: inherit;
+    color:inherit;
 }
 
 .nav-bar__list__item>a:hover {
