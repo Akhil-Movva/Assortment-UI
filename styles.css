@@ -585,7 +585,7 @@ body {
 .modal__text {
     padding: 0 0 1rem 1rem;
     border-bottom: 1px solid grey;
-    text-align:center;
+    text-align: center;
 }
 
 .modal__buttons {
