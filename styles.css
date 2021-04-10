@@ -571,7 +571,7 @@ body {
     width: 30%;
     border-radius: 0.25rem;
     position: relative;
-}
+}   
 
 .modal__title {
     margin: 1rem 0;
@@ -585,6 +585,7 @@ body {
 .modal__text {
     padding: 0 0 1rem 1rem;
     border-bottom: 1px solid grey;
+    text-align: center;
 }
 
 .modal__buttons {
